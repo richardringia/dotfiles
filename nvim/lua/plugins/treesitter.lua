@@ -1,0 +1,14 @@
+return {
+	"nvim-treesitter/nvim-treesitter",
+	name = "nvim-treesitter",
+	build = ":TSUpdate",
+	config = function()
+		local configs = require("nvim-treesitter.configs")
+
+		configs.setup({
+      auto_install = true,
+			hightlight = { enable = true },
+			indent = { enable = true },
+		})
+	end,
+}
