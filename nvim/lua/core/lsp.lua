@@ -1,7 +1,7 @@
 vim.lsp.enable({
   "lua_ls",
   "vtsls",
-  "intelephense",
+  "biome",
 })
 
 -- Set up global LSP keymaps for quickfix and code actions
@@ -45,6 +45,7 @@ vim.lsp.on_attach = on_attach
 -- Configure LSP servers using configurations from lsp/ folder
 vim.lsp.config.lua_ls = require("lsp.lua_ls")
 vim.lsp.config.vtsls = require("lsp.vtsls")
+vim.lsp.config.biome = require("lsp.biome")
 
 vim.diagnostic.config({
   virtual_lines = true,
