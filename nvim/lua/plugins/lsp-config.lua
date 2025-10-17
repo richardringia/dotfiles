@@ -9,7 +9,7 @@ return {
 		"mason-org/mason-lspconfig.nvim",
 		config = function()
 			require("mason-lspconfig").setup({
-				ensure_installed = { "vtsls", "lua_ls", "biome" },
+				ensure_installed = { "lua_ls", "biome" },
 			})
 		end,
 	},
