@@ -18,5 +18,23 @@ return {
 				})
 			end, { silent = true, noremap = true, desc = "Toggle Neo-tree filesystem on left" })
 		end,
+		opts = {
+			filesystem = {
+				show_hidden = true,
+				filtered_items = {
+					visible = false, -- hide filtered items on open
+					hide_gitignored = true,
+					hide_dotfiles = false,
+					hide_by_name = {
+						".github",
+						".gitignore",
+						"package-lock.json",
+						".changeset",
+						".prettierrc.json",
+					},
+					never_show = { ".git" },
+				},
+			},
+		},
 	},
 }
