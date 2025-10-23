@@ -10,7 +10,7 @@ return {
 			local builtin = require("telescope.builtin")
 			local action_state = require('telescope.actions.state')
 
-			vim.keymap.set("n", "<c-p>", builtin.find_files, {})
+			vim.keymap.set("n", "<c-p>", builtin.find_files, {desc = "Find files"})
 			vim.keymap.set("n", "<leader>fg", builtin.live_grep, {})
 			vim.keymap.set("n", "<leader>fh", builtin.help_tags, { desc = "Telescope help tags" })
 			vim.keymap.set("n", "<leader>fo", builtin.lsp_document_symbols, {})

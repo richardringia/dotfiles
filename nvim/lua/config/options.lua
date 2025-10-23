@@ -12,3 +12,6 @@ vim.api.nvim_create_autocmd({ "BufEnter", "CursorHold", "CursorHoldI", "FocusGai
 })
 
 vim.g.lazyvim_prettier_needs_config = true
+
+-- always have 8 lines above or below
+vim.opt.scrolloff = 8
